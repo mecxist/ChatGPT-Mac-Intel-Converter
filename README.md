@@ -11,6 +11,7 @@ It is not affiliated with or endorsed by OpenAI. Use at your own risk.
 ## What This Project Does
 
 This project takes `ChatGPT.dmg` as input and produces `ChatGPTIntel.dmg` for Intel Macs.
+Current ChatGPT desktop builds are native Apple Silicon (`arm64`), so this tool usually creates an Intel (`x64`) wrapper app instead of converting the original native app binary.
 
 ## Files
 
