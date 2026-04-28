@@ -1,7 +1,7 @@
 # ChatGPT Intel Builder for macOS (Unofficial)
 
-Built by **m.j. zilla**.
-- Substack: [mecxist.substack.com](https://mecxist.substack.com/)
+Built by **m.j. zilla**
+subscribe for more tools and insights [mecxist.substack.com](https://mecxist.substack.com/)
 
 ## Disclaimer
 
@@ -48,7 +48,7 @@ flowchart TD
 Use any local folder layout you prefer, then pass the correct DMG path to the script.
 
 ### 1) Go to the converter folder
-# (If you're already in this folder skip to step 2):
+### (If you're already in this folder skip to step 2):
 
 ```bash
 cd ~/path/to/your/workspace/ChatGPT-Mac-Intel-Converter
@@ -65,16 +65,24 @@ chmod +x ./build-intel.sh ./build-web-wrapper-intel.sh
 
 After a successful run, you should get:
 
-- `ChatGPTIntel.dmg`
-
-## Outputs
-
 - `ChatGPTIntel.dmg` - Intel wrapper output (most common with current native ChatGPT builds)
 - `log.txt` - main build log
 - `web-wrapper-log.txt` - wrapper build log
 
 ## Troubleshooting
 
-- If npm download fails, check internet/proxy settings.
-- If code signing fails, re-run and review `log.txt`.
-- If you are on Apple Silicon and wrapper build fails for x64 tooling, ensure Rosetta is installed.
+- `ChatGPT.dmg` not found:
+  Pass the full file path explicitly, for example:
+  `./build-intel.sh "/absolute/path/to/ChatGPT.dmg"`
+- `Permission denied` when running scripts:
+  Run `chmod +x ./build-intel.sh ./build-web-wrapper-intel.sh` and retry.
+- `node` or `npm` command not found:
+  Install Node.js first, then run the build again.
+- Build fails partway through:
+  Check `log.txt` and `web-wrapper-log.txt` for the last error line and rerun.
+- Output DMG not created:
+  Confirm you ran from the converter folder and that `ChatGPT.dmg` is readable.
+- App won’t open on macOS after install:
+  Right-click the app and choose `Open` once to pass Gatekeeper prompts.
+
+Still stuck? Message me on Substack: [mecxist.substack.com](https://mecxist.substack.com/)
