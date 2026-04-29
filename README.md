@@ -1,4 +1,4 @@
-# ChatGPT Intel Builder for macOS (Unofficial)
+# ChatGPT Intel Converter for macOS (Unofficial)
 
 Built by **m.j. zilla**   
 subscribe for more tools and insights [mecxist.substack.com](https://mecxist.substack.com/)
