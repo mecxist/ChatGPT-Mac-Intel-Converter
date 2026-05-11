@@ -46,9 +46,11 @@ flowchart TD
   C --> F
 ```
 
-Use any local folder layout you prefer, then pass the correct DMG path to the script.
 
-### 1) Go to the converter folder
+### (0) CLick the "code" button above to download or clone this repo to your computer/local coding environment
+
+
+### 1) Navigate to the converter folder in your prefered terminal
 ### (If you're already in this folder skip to step 2):
 
 ```bash
